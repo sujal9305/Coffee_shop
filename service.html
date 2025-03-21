@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+   <style>    .box{
+    width: auto;
+    height:750px;
+    padding: 0px;
+    margin:10px auto;
+    background-image: url(../img/bgcafe.png);
+    text-align: center;
+    background-size: cover;
+    object-fit: contain;
+    opacity:1;
+ }
+ .top-bar {
+    background-color: black;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.top-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.top-bar ul li {
+    margin-left: 20px;
+}
+.top-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.top-bar .social-icons {
+    display: flex;
+    align-items: center;
+}
+.top-bar .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+header {
+    background-color: #16222A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+header .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.h{
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.h h1 {
+    margin: 0 auto;
+    font: normal normal normal 60px/69px Bellefair;
+    letter-spacing: 1.2px;
+    color: #C5A572;
+    opacity: 1;
+}
+.h p {
+    text-align: left;
+    font: normal normal medium 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.76;
+}
+.footer-container1 {
+            background-image: url(../img/bgcafe.png) ;
+            background-size: cover;
+           
+            background-position: center;
+            padding: 40px;
+            margin-top: 100px;
+        }
+        .footer-logo{
+          font-size: 24px;
+          font-weight: bold;
+        }.footer-logo i {
+            font-size: 30px;
+            color: #e3c88d;
+        }
+
+        .footer-column h5 {
+          text-align: left;
+          font: normal normal medium 25px/40px Montserrat;
+          letter-spacing: 0.63px;
+          color: #C5A572;
+          opacity: 1;
+        }
+        .footer-column p{
+          margin-top: 45px;
+          margin-bottom: 4rem;
+          text-align: left;
+          font: normal normal normal 15px/40px Montserrat;
+          letter-spacing: 0.69px;
+          color: #DADADA;
+          opacity: 0.79;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 45px;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0;
+        }
+        .footer-column ul li p{
+          text-align: left;
+          font: normal normal normal 15px/40px Montserrat;
+          letter-spacing: 0.69px;
+          color: #DADADA;
+          opacity: 0.79;
+          margin-bottom: 0rem;
+        }
+        .newsletter input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f1b24a;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .middle-bar {
+           
+            padding: 15px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+        .middle-bar .social-icons2{
+            display: flex;
+            justify-content: space-between;        }
+            .main {
+          background: none;
+            display: flex
+        ;
+            justify-content: center;
+            padding: 70px 63px;
+
+        }
+        .container14 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            text-align: left;
+            margin-bottom: 100px;
+            width: 1200px;
+            margin: 0 auto;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .text-content {
+            flex: 1;
+            width: 1000px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .text-content h2 {
+            text-align: left;
+            font: normal normal normal 20px/27px Montserrat;
+            letter-spacing: 0.18px;
+            color: #C5A572;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        .text-content h1 {
+            text-align: left;
+            font: normal normal normal 40px/60px Bellefair;
+            letter-spacing: 0px;
+            color: #121D27;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+        .text-content p {
+            text-align: left;
+            font: normal normal medium 20px/37px Montserrat;
+            letter-spacing: 0.4px;
+            color: #000000;
+            opacity: 0.59;
+            line-height: 2;
+        }
+        .box3{
+            background-image: url(../img/services/servicesbg.png);
+            background-size: cover;
+            width: auto;
+            height: 500px;
+            opacity: 1;
+            justify-content: center;
+            text-align: center;
+            }
+            .text4{
+                margin: 0 auto;
+                text-align: center;
+                width: 1150px;
+            }
+        .text4 h2{
+          padding: 100px;
+            font: normal normal normal 40px/70px Bellefair;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-transform: capitalize;
+           
+        }
+        .container12 {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-top: 100px;
+        }
+        .container12 h2 {
+      
+            text-align: center;
+font: normal normal normal 22px/27px Montserrat;
+letter-spacing: 0.18px;
+color: #C5A572;
+text-transform: uppercase;
+opacity: 1;
+        }
+        .container12 h1{
+            text-align: center;
+font: normal normal normal 45px/60px Bellefair;
+letter-spacing: 0px;
+color: #121D27;
+text-transform: capitalize;
+opacity: 1;
+margin-bottom: 50px;
+        }
+        .img-grid {
+            display: flex;
+            gap: 35px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .img-grid img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0px;
+             
+        }
+        .text {
+            text-align: center;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .text p{
+            text-align: center;
+            font: normal normal medium 20px/37px Montserrat;
+            letter-spacing: 0.4px;
+            color: #121D27;
+            opacity: 0.59;
+        }
+        .text h2 {
+      
+            font: normal normal normal 40px/46px Bellefair;
+            letter-spacing: 0.18px;
+            color: #C5A572;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        .text h4{
+            font: normal normal normal 40px/46px Bellefair;
+            letter-spacing: 0.32px;
+            color: #C5A572;
+            opacity: 1;
+            align-items: center;
+        }
+        .py-5{
+
+            padding-top: 4rem !important;
+            padding-bottom: 4rem !important;
+        }
+        
+</style>
+</head>
+<body>
+    <!-- header -->
+    <div class="box">
+        <div class="top-bar">
+            <div class="social-icons">
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+            <ul>
+                <a href="#" target="_blank" style=" color: white;
+                text-decoration: none;
+                font-size: 14px;">
+                    <i class="fab fa-envelope-square" ></i>
+                </a>
+                <li><a href="#">Mail us: info@havnor.com</a></li>
+              <li>  <a href="#" target="_blank" style=" color: white;
+                text-decoration: none;
+                font-size: 14px;">
+                    <i class="fa fa-phone"></i>
+                </a></li>
+                <li><a href="#">Call us: (+1) 123 456 7890</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="logo">
+                <img src="../img/cafelogo.svg" alt="Logo" style="height: auto; width: 200px;">
+              
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../proj 1/1one.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="h" >
+            <h1>Our Services</h1>
+            <p>Home / Services</p>
+        </div>
+    </div>
+    <!-- our services -->
+    <section class="container ">
+        <div class="container  py-5 ">
+            <div class="row align-items-center py-3">
+                <div class=" col-md-6 col-lg-4">
+                    <h6>OUR SERVICES</h6>
+                    <h2>We Hold Events</h2>
+                </div>
+
+                <div class="col-md-6 col-lg-8">
+                    <p>Iste sed saepe animi magnam voluptatibus voluptatibus natus quaerat. Sit sunt id rem.
+                        Doloribus
+                        et quam et tempora veritatis praesentium vero. Tempora repudiandae quia</p>
+                </div>
+            </div>
+
+            <div class="row " style="background-color: #F4EEE4;">
+                <div class="col-md-8 text-center p-3">
+                    <img src="../img/services/wedding-rings.svg" height="50px" alt="">
+                    <h3 style="text-align: center;
+                    font: normal normal normal 50px/40px Bellefair;
+                    letter-spacing: 0px;
+                    color: #121D27;
+                    opacity: 1;">Wedding Events</h3>
+                    <img src="../img/services/commonicon.svg" width="300px" height="20px" srcset="">
+                    <p style="text-align: center;
+                    font: normal normal medium 20px/31px Montserrat;
+                    letter-spacing: 0.4px;
+                    color: #000000;
+                    opacity: 0.6; width: 500px; margin-left: 180px;">Explicabo laborum facilis cupiditate sunt ducimus cupiditate quos. Quia ad vel et qui
+                        voluptas
+                        praesentium. Rerum eos cum. Sit quia quasi distinctio repellat in pariatur sit.Minus
+                        consequuntur atque voluptatem temporibus et qui optio commodi. Est non natus accusantium
+                        aperiam
+                        est deleniti.</p>
+                </div>
+                <div class="col-md-4"
+                    style="background-image: url(../img/services/ser1.png); object-fit: cover; background-size: 100% 100%; height: auto;">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"
+                    style="background-image: url(../img/services/ser2.png); background-size: 100% 100%;"></div>
+                <div class="col-md-8 text-center p-3">
+                    <img src="../img/services/restauranticon.svg" height="50px" alt="">
+                    <h3  style="text-align: center;
+                    font: normal normal normal 50px/40px Bellefair;
+                    letter-spacing: 0px;
+                    color: #121D27;
+                    opacity: 1;">Holiday Parties</h3>
+                    <img src="../img/services/commonicon.svg" width="300px" height="20px" srcset="">
+                    <p style="text-align: center;
+                    font: normal normal medium 20px/31px Montserrat;
+                    letter-spacing: 0.4px;
+                    color: #000000;
+                    opacity: 0.6; width: 500px; margin-left: 180px;">Consequatur necessitatibus fugit sint. Facere aut aut commodi aut. Laudantium enim facere
+                        repellendus quod amet. Blanditiis et doloribus modi dolor voluptatibus ea.Autem tempora aut
+                        sint
+                        non. Fuga magni cupiditate porro aperiam eaque autem porro. Ut facilis animi. Voluptates
+                        repudiandae dolorum.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row " style="background-color: #F4EEE4;">
+                <div class="col-md-8 text-center p-3">
+                    <img src="../img/services/birthday-cakeicon.svg" height="50px" alt="">
+                    <h3  style="text-align: center;
+                    font: normal normal normal 50px/40px Bellefair;
+                    letter-spacing: 0px;
+                    color: #121D27;
+                    opacity: 1;">Birthday Parties</h3>
+                    <img src="../img/services/commonicon.svg" width="300px" height="20px" srcset="">
+                    <p style="text-align: center;
+                    font: normal normal medium 20px/31px Montserrat;
+                    letter-spacing: 0.4px;
+                    color: #000000;
+                    opacity: 0.6; width: 500px; margin-left: 180px;">Unde sapiente aut molestias est voluptate autem molestiae blanditiis ullam. Quas non at qui
+                        est
+                        beatae omnis aliquam non iure. Neque qui soluta itaque nostrum vitae aut unde. Sit voluptate
+                        sapiente saepe rerum. Molestiae aspernatur deleniti modi vitae. At molestiae expedita
+                        nesciunt
+                        placeat magni atque voluptates.Blanditiis et quas dicta inventore eveniet dicta distinctio
+                        dolor. Mollitia sed minus laborum sit perferendis debitis ut et. Tempore totam libero quia
+                        qui
+                        sed. Eos voluptate et voluptatem inventore libero soluta totam sunt et. Expedita error
+                        architecto non sapiente aspernatur nihil nihil.</p>
+                </div>
+                <div class="col-md-4"
+                    style="background-image: url(../img/services/ser3.png); background-size: 100% 100%;">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"
+                    style="background-image: url(../img/services/ser4.png); background-size: 100% 100%;"></div>
+                <div class="col-md-8 text-center p-3">
+                    <img src="../img/services/bar.svg" height="50px" alt="">
+                    <h3 style="text-align: center;
+                    font: normal normal normal 50px/40px Bellefair;
+                    letter-spacing: 0px;
+                    color: #121D27;
+                    opacity: 1;">Social Events</h3>
+                    <img src="../img/services/commonicon.svg" width="300px" height="20px" srcset="">
+                    <p style="text-align: center;
+                    font: normal normal medium 20px/31px Montserrat;
+                    letter-spacing: 0.4px;
+                    color: #000000;
+                    opacity: 0.6; width: 500px; margin-left: 180px;">Nostrum voluptas illo iusto ut. Et dolor ab sit earum ut. Quo et sapiente non voluptatem est
+                        facere et dicta. Esse modi libero saepe id et et. Voluptates unde nihil error ducimus
+                        excepturi
+                        placeat sunt. Et eaque excepturi ullam deserunt voluptatum non iusto nemo. Et delectus
+                        voluptatem modi quas totam.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row " style="background-color: #F4EEE4;">
+                <div class="col-md-8 text-center p-3">
+                    <img src="../img/services/cheersicon.svg" height="50px" alt="">
+                    <h3 style="text-align: center;
+                    font: normal normal normal 50px/40px Bellefair;
+                    letter-spacing: 0px;
+                    color: #121D27;
+                    opacity: 1;">Corporate Events</h3>
+                    <img src="../img/services/commonicon.svg" width="300px" height="20px" srcset="">
+                    <p style="text-align: center;
+                    font: normal normal medium 20px/31px Montserrat;
+                    letter-spacing: 0.4px;
+                    color: #000000;
+                    opacity: 0.6; width: 500px; margin-left: 180px;">Officiis rerum aliquam rem. Minus sed omnis sed suscipit. Voluptatum natus aut minus qui id
+                        est
+                        et corporis maxime. Nihil est beatae dolorem qui similique. Sapiente quo non quis ducimus
+                        est.Quia consequuntur ullam. Commodi officia facilis iure. Molestiae vel dolore enim. Sequi
+                        et
+                        ea libero pariatur architecto ex.</p>
+                </div>
+                <div class="col-md-4"
+                    style="background-image: url(../img/services/ser5.png); background-size: 100% 100%;">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"
+                    style="background-image: url(../img/services/ser6.png); background-size: 100% 100%;"></div>
+                <div class="col-md-8 text-center p-3">
+                    <img src="../img/services/cheersicon.svg" height="50px" alt="">
+                    <h3 style="text-align: center;
+                    font: normal normal normal 50px/40px Bellefair;
+                    letter-spacing: 0px;
+                    color: #121D27;
+                    opacity: 1;">Private Party</h3>
+                    <img src="../img/services/commonicon.svg" width="300px" height="20px" srcset="">
+                    <p style="text-align: center;
+                    font: normal normal medium 20px/31px Montserrat;
+                    letter-spacing: 0.4px;
+                    color: #000000;
+                    opacity: 0.6; width: 500px; margin-left: 180px;">Nulla nihil magni sed iste unde nam id. Aut nesciunt deserunt eveniet in et similique
+                        laudantium
+                        eos amet. Neque minus autem nulla. Dolor voluptates recusandae voluptatum. Quos quos
+                        voluptas.Enim dolorem illo non magnam quia saepe quos dolor. Suscipit iste quasi. Unde non
+                        eum
+                        ea culpa nulla voluptatibus dolores et voluptatem.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+<!-- read  more -->
+     <div class="box3">
+        <div class="text4">
+            <h2>With A Full Range Of Event Management Service And Super Menu, Our Client Achieve <span style="text-align: center;
+                font: normal normal normal 40px/70px Bellefair;
+                letter-spacing: 0px;
+                color: #C5A572;
+                text-transform: capitalize; ">Successful</span> And Prosperous Events!</h2>
+        </div>
+        <div class="row g-4 justify-content-center ">
+       
+            <button style="width: 140px;
+                 height: 50px;
+                 border: 1px solid white;
+                 opacity: 1;
+                 font: normal normal  20px/30px Montserrat;
+                 letter-spacing: 0px;
+                 color: #C5A572;
+                 opacity: 1;margin-bottom: 60px; margin-top: 0px; ">Read More</button>   
+    </div>
+     </div>
+     <!-- moment -->
+     <div class="container12">
+        <h2>OUR SPECIALITIES</h2>
+        <h1>Our Happy Moments</h1>
+        <div class="img-grid">
+         <img src="../img/blog/blogimg1.png" alt="">
+         <img src="../img/blog/blogimg7.png" alt="">
+         <img src="../img/sp3.png" alt="">
+         <img src="../img/sp3.png" alt="">
+        </div>
+      </div>
+      <!-- table book -->
+      <div class="text">
+        <h2 style="margin-top: 100px; font: normal normal normal 22px/27px Montserrat">CONTACT US</h2>
+        <h1 style="
+        font: normal normal normal 45px/65px Bellefair;
+        letter-spacing: 0px;
+        color: #000000;
+        text-transform: capitalize;
+        opacity: 1;">Book Your Reservation Today</h1>
+         <p >Dolorum corrupti nesciunt repellendus sapiente et dolorum est. Possimus voluptatem </p>
+         <p> nemo harum. Nihil autem sed praesentium odit et consequatur quis. Sint id et </p>
+            <p>dolorem nulla sapiente eos harum eum.</p>
+       
+       </div>
+       <div class="row g-4 justify-content-center ">
+       
+        <button style="width: 200px;
+             height: 60px;
+             background: #FFFFFF 0% 0% no-repeat padding-box;
+             border: 1px solid #C5A572;
+             opacity: 1;
+             font: normal normal  32px/50px Montserrat;
+             letter-spacing: 0px;
+             color: #C5A572;
+             opacity: 1;margin-bottom: 50px; margin-top: 40px; ">Book Table</button>   
+       
+      </div>
+    <!-- footer -->
+    <div class="footer-container1">
+        <div class="main">
+            <div class="logo">
+                <img src="../img/cafelogo.svg" alt="Logo" style="height: auto; width: 200px;">
+                
+             </div></div>
+      <div class="middle-bar"></div>
+      <div class="social-icons2">
+        <a href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="#" target="_blank">
+        <i class="fab fa-twitter"></i>
+    </a>
+    </div>
+      <div class="container ">
+          
+            <div class="row text-center">
+                <div class="col-md-3 footer-column">
+                    <h5>Contact Us</h5>
+                    <p>2839 Old Dear Lane<br>New York, NY 10013<br>United States</p>
+                    <p>+ (0712) 819-79-555<br>info@havnor.com</p>
+                </div>
+    
+                <div class="col-md-3 footer-column">
+                    <h5>Services</h5>
+                    <p style="margin-top: 45px; margin-bottom: 1px;">Fine Dining & Concierge</p>
+                    <p style="margin-top: 0px;margin-bottom: 1PX;"> Quick Counter Service</p>
+                    <p style="margin-top: 0px;margin-bottom: 1PX;">Banquet Table Service</p>
+                    <p style="margin-top: 0px;margin-bottom: 1PX;">Fine Dining & Concierge</p>
+                    <p style="margin-top: 0px;margin-bottom: 1PX;">Fine Dining & Concierge</p>
+                    <p style="margin-top: 0px;margin-bottom: 1px;">Fine Dining & Concierge</p>
+                    <p style="margin-top: 0px;margin-bottom: 1px;">Fine Dining & Concierge</p>
+                </div>
+    
+                <div class="col-md-3 footer-column">
+                    <h5>Opening Hours</h5>
+                    <p>Mon - Fri: 09:00 AM - 08:00 PM<br>Sat - Sun: 09:00 AM - 05:00 PM</p>
+                    <h5>Coffee Bar Opening</h5>
+                    <p>Mon - Fri: 09:00 AM - 08:00 PM<br>Sat - Sun: 09:00 AM - 05:00 PM</p>
+                </div>
+    
+                <div class="col-md-3 footer-column">
+                    <h5>Newsletter</h5>
+                    <p>  Stay always in touch! Subscribe to our newsletter.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button>Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-4 text-center">
+                <div class="col-md-12">
+                    
+                    <p style="font: normal normal normal 13px/40px Montserrat;
+                    letter-spacing: 0.6px;
+                    color: #949494;
+                    opacity: 1;">COPYRIGHT &copy; All rights reserved by Oneline Cafe</p>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

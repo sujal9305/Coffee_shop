@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+      body
+      {
+          color: white;
+      }
+      .box{
+              width: auto;
+              height:750px;
+              padding: 0px;
+              margin:10px auto;
+              background-image: url(../img/bgcafe.png);
+              text-align: center;
+              background-size: cover;
+              object-fit: contain;
+              opacity:1;
+          }
+          .top-bar {
+              background-color: black;
+              padding: 15px 50px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 14px;
+          }
+          .top-bar ul {
+              display: flex;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+          }
+          .top-bar ul li {
+              margin-left: 20px;
+          }
+          .top-bar ul li a {
+              color: white;
+              text-decoration: none;
+              font-size: 14px;
+          }
+          .top-bar .social-icons {
+              display: flex;
+              align-items: center;
+          }
+          .top-bar .social-icons a {
+              color: white;
+              font-size: 20px;
+              margin-right: 20px;
+              text-decoration: none;
+          }
+          header {
+              background-color: #16222A;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 15px 50px;
+          }
+          header .logo {
+              font-size: 24px;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              color: white;
+          }
+          header .logo img {
+              width: 40px;
+              margin-right: 10px;
+          }
+
+          nav ul {
+              display: flex;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+          }
+
+          nav ul li {
+              margin-left: 30px;
+          }
+
+          nav ul li a {
+              color: white;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 400;
+              
+          }
+          .h{
+              margin: 200px auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding: 0 20px;
+          }
+          .h h1 {
+              margin: 0 auto;
+              font: normal normal normal 60px/69px Bellefair;
+              letter-spacing: 1.2px;
+              color: #C5A572;
+              opacity: 1;
+          }
+          .h p {
+              text-align: left;
+              font: normal normal medium 20px/24px Montserrat;
+              letter-spacing: 0px;
+              color: #FFFFFF;
+              opacity: 0.76;
+          }
+      .story-section {
+        text-align: center;
+        padding: 100px 20px;  
+      }
+
+      .story-section h2 {
+          font: normal normal normal 22px/27px Montserrat;
+          letter-spacing: 0.18px;
+          color: #C5A572;
+          text-transform: uppercase;
+          opacity: 1;
+      }
+
+      .story-section h1 {
+          
+              font: normal normal normal 35px/40px Bellefair;
+              letter-spacing: 0px;
+              color: #000000;
+              text-transform: capitalize;
+              opacity: 1;
+              margin-bottom: 40px
+      }
+      .story-card{
+        
+          display: flex;
+        justify-content: center;
+        gap: 70px;
+        flex-wrap: wrap;
+      }
+      .card
+      {
+          background-color: #FFFFFF;
+          border: 1px solid #C5A572;
+          border-radius: 0;
+          padding: 30px;
+          width: 400px;
+          
+          text-align: center;
+      }
+      .card h2{
+          text-align: center;
+          font: normal normal normal 25px/40px Bellefair;
+          letter-spacing: 0px;
+          color: #000000;
+          text-transform: capitalize;
+          opacity: 1;
+      }
+      .card p{
+          text-align: center;
+          font: normal normal medium 20px/37px Montserrat;
+          letter-spacing: 0.4px;
+          color: #121D27;
+          opacity: 0.59;
+      }
+          .footer-section {
+            display: flex;
+            flex-wrap: wrap;
+            color: #333;
+            padding: 80px 0;
+            background: #F4EEE4;
+          }
+
+          .footer-heading {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 30px;
+          }
+
+            .footer-item {
+              text-align: center;
+              margin-bottom: 20px;
+            }
+
+            .footer-item i {
+              font-size: 2.5rem;
+              color: #c0a16b;
+              margin-bottom: 10px;
+              display: inline-block;
+            }
+
+            .footer-item h3 {
+              font-size: 2rem;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+
+          .footer-item p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+          }
+          .bg {
+            padding: 50px;
+            margin: 0 auto;
+              background: url('../img/about_us_video.png') no-repeat center center;
+              background-size: cover;
+              width: 1200px;
+              height: 450px;
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+
+
+
+          .play-button {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              position: absolute;
+              background: url('../img/Group\ 18571.svg') center center no-repeat ;
+          }
+          .container11{
+            padding: 100px;
+            margin-bottom: 20px;
+          }
+            .container12 {
+              text-align: center;
+              padding: 0;
+              margin-bottom: 30px;
+          }
+          .container12 h2 {
+        
+              font: normal normal normal 22px/27px Montserrat;
+              letter-spacing: 0.18px;
+              color: #C5A572;
+              text-transform: uppercase;
+              opacity: 1;
+          }
+          .container12 h1{
+              font: normal normal normal 45px/65px Bellefair;
+              letter-spacing: 0px;
+              color: #000000;
+              text-transform: capitalize;
+              opacity: 1;
+              margin-bottom: 50px;
+          }
+          .img-grid {
+              display: flex;
+              gap: 35px;
+              flex-wrap: wrap;
+              justify-content: center;
+          }
+
+          .img-grid img {
+              width: auto;
+              height: 318px;
+              object-fit: cover;
+              border-radius: 0px;
+              
+          }
+          .quote-grid{
+            display: flex;
+            gap: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 150px;
+          }
+        .q-card{
+          background-color: white;
+          padding: 20px;
+          border-radius: 0;
+          max-width: 300px;
+          max-height: 100px;
+          text-align: center;
+          text-overflow: ellipsis;
+        }
+        .q-card p{
+          text-align: center;
+          font: normal normal medium 25px/42px Montserrat;
+          letter-spacing: 0.4px;
+          color: #000000;
+          opacity: 0.59;
+          
+        }
+        .q-card h4{
+          text-align: center;
+          font: normal normal normal 30px/32px Bellefair;
+          letter-spacing: 0px;
+          color: #121D27;
+          opacity: 1;
+        }
+        
+        .bg2{
+          width: 1190px;
+          height: 500px;
+          background: #F4EEE4 0% 0% no-repeat padding-box;
+          padding: 50px;
+          justify-content: center;
+          margin: 0 auto;
+          margin-bottom: 100px;
+        }
+        .container13 {
+          text-align: center;
+          padding: 0;
+          margin-bottom: 0px;
+        }
+        .container13 h2 {
+          
+              font: normal normal normal 14px/27px Montserrat;
+              letter-spacing: 0.18px;
+              color: #C5A572;
+              text-transform: uppercase;
+              opacity: 0.8;
+          }
+          .container13 h1{
+              font: normal normal normal 25px/35px Bellefair;
+              letter-spacing: 0px;
+              color: #000000;
+              text-transform: capitalize;
+              opacity: 1;}
+              .quote-grid2{
+                display: flex;
+                gap: 70px;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 150px;
+              }
+              .q-card1{
+              
+              border-radius: 0;
+              max-width: 300px;
+              max-height: 100px;
+              text-align: center;
+              text-overflow: ellipsis;
+              }
+              .q-card1 p{
+              text-align: center;
+              font: normal normal medium 25px/42px Montserrat;
+              letter-spacing: 0.4px;
+              color: #000000;
+              opacity: 0.59;
+              
+              }
+              .q-card1 h4{
+              text-align: center;
+              font: normal normal normal 25px/32px Bellefair;
+              letter-spacing: 0px;
+              color: #121D27;
+              opacity: 1;
+              }
+              .footer-section1 {
+            display: flex;
+            flex-wrap: wrap;
+        
+            padding: 50px 0;
+          }
+          .container14 {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 35px;
+              text-align: left;
+              margin-bottom: 100px;
+              width: 1200px;
+              margin: 0 auto;
+              justify-content: center;
+          }
+
+          .text-content {
+              flex: 1;
+              width: 1000px;
+              margin-bottom: 20px;
+              justify-content: center;
+          }
+          .text-content h2 {
+              text-align: left;
+              font: normal normal normal 20px/27px Montserrat;
+              letter-spacing: 0.18px;
+              color: #C5A572;
+              text-transform: uppercase;
+              opacity: 1;
+          }
+          .text-content h1 {
+              text-align: left;
+              font: normal normal normal 40px/60px Bellefair;
+              letter-spacing: 0px;
+              color: #121D27;
+              text-transform: capitalize;
+              opacity: 1;
+          }
+          .text-content p {
+              text-align: left;
+              font: normal normal medium 20px/37px Montserrat;
+              letter-spacing: 0.4px;
+              color: #000000;
+              opacity: 0.59;
+              line-height: 2;
+          }
+        
+
+          .header-content h2 {
+              font-size: 22px;
+              color: #C5A572;
+              text-transform: uppercase;
+              margin-bottom: 10px;
+          }
+
+          .header-content h1 {
+              font-size: 45px;
+              font-family: 'Bellefair', serif;
+              color: #121D27;
+              text-transform: capitalize;
+              margin-bottom: 20px;
+          }
+
+          .header-content h4 {
+              font-size: 20px;
+              color: #000000;
+              opacity: 0.59;
+              line-height: 1.8;
+          }
+
+          .team-grid {
+              display: flex;
+              gap: 40px;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-bottom: 50px;
+          }
+
+          .team-grid img {
+              width: 369px;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 0px;
+          }
+
+          .container15 { 
+            justify-content: center ;
+            width: 1200px;
+            margin: 0 auto;
+          }
+          .container15 h2 {
+            text-align: center;
+          
+              font: normal normal normal 22px/27px Montserrat;
+              letter-spacing: 0.18px;
+              color: #C5A572;
+              text-transform: uppercase;
+              opacity: 1;
+              margin-bottom: 20px;
+              
+          }
+          .container15 h1{
+              text-align: center;
+              font: normal normal normal 35px/50px Bellefair;
+              letter-spacing: 0px;
+              color: #121D27;
+              text-transform: capitalize;
+              opacity: 1;
+              width: 740px;
+              margin: 0 auto;
+              margin-bottom: 50px;
+          }
+          .img-grid2 {
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-bottom: 100px;
+          }
+
+          .img-grid2 img {
+              width: 290px;
+              height: 210px;
+              object-fit: cover;
+              border-radius: 0px;
+              object-fit: contain;
+          }
+          .footer-container1 {
+              background-image: url(../img/bgcafe.png) ;
+              background-size: cover;
+            
+              background-position: center;
+              padding: 40px;
+          }
+          .footer-logo{
+            font-size: 24px;
+            font-weight: bold;
+          }.footer-logo i {
+              font-size: 30px;
+              color: #e3c88d;
+          }
+
+          .footer-column h5 {
+            text-align: left;
+            font: normal normal medium 25px/40px Montserrat;
+            letter-spacing: 0.63px;
+            color: #C5A572;
+            opacity: 1;
+          }
+          .footer-column p{
+            margin-top: 45px;
+            margin-bottom: 4rem;
+            text-align: left;
+            font: normal normal normal 15px/40px Montserrat;
+            letter-spacing: 0.69px;
+            color: #DADADA;
+            opacity: 0.79;
+          }
+
+          .footer-column ul {
+              list-style: none;
+              padding: 0;
+              margin-top: 45px;
+          }
+
+          .footer-column ul li {
+              margin-bottom: 0;
+          }
+          .footer-column ul li p{
+            text-align: left;
+            font: normal normal normal 15px/40px Montserrat;
+            letter-spacing: 0.69px;
+            color: #DADADA;
+            opacity: 0.79;
+            margin-bottom: 0rem;
+          }
+          header .logo img {
+              width: 30px;
+            margin-right: 50px;
+          }
+          .newsletter input {
+              width: 100%;
+              padding: 10px;
+              border: none;
+              margin-bottom: 10px;
+              border-radius: 5px;
+          }
+
+          .newsletter button {
+              width: 100%;
+              padding: 10px;
+              background-color: #f1b24a;
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-weight: bold;
+              cursor: pointer;
+          }
+          .middle-bar {
+            
+              padding: 15px 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+          }
+          .social-icons2{
+              display: flex;
+            gap :30px;
+            margin-left: 20px;
+            margin-top: 50px;
+            color: white; 
+            font-size: large;           
+
+           }
+              .main {
+            background: none;
+              display: flex
+          ;
+              justify-content: center;
+              padding: 60px 30px;
+
+          }
+      </style>
+</head>
+<body>
+  <div class="box">
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+        <ul>
+            <a href="#" target="_blank" style=" color: white;
+            text-decoration: none;
+            font-size: 14px;">
+                <i class="fab fa-envelope-square" ></i>
+            </a>
+            <li><a href="#">Mail us: info@havnor.com</a></li>
+          <li>  <a href="#" target="_blank" style=" color: white;
+            text-decoration: none;
+            font-size: 14px;">
+                <i class="fa fa-phone"></i>
+            </a></li>
+            <li><a href="#">Call us: (+1) 123 456 7890</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="../img/cafelogo.svg" alt="Logo" style="height: auto; width: 200px;">
+          
+        </div>
+        <nav>
+            <ul>
+
+                <li><a href="../proj 1/1one.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./contactus.html">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="h" >
+        <h1>Take a tour</h1>
+        <p>Home / About Us</p>
+    </div>
+</div>
+         
+    <div class="story-section">
+        <h2>Our Story</h2>
+        <h1>Since 2007</h1>
+        <div class="story-card">
+          <div class="card">
+            <h2>Who We Are</h2>
+            <p>Iste sed saepe animi magnam voluptatibus voluptatibus natus quaerat. Sit sunt id rem. Doloribus et quam et tempora veritatis praesentium vero. Tempora repudiandae quia.Dicta dolorum neque illum sit quam nemo labore asperiores sed. Exercitationem voluptatem ut qui accusamus veniam. Fugit voluptatem dignissimos aperiam beatae labore esse.</p>
+    
+          </div>
+          <div class="card">
+            <h2>Why Choose Us</h2>
+          <p>Iste sed saepe animi magnam voluptatibus voluptatibus natus quaerat. Sit sunt id rem. Doloribus et quam et tempora veritatis praesentium vero. Tempora repudiandae quia.Dicta dolorum neque illum sit quam nemo labore asperiores sed. Exercitationem voluptatem ut qui accusamus veniam. Fugit voluptatem dignissimos aperiam beatae labore esse.</p>
+    
+          </div>
+        </div>
+    </div>
+    <section class="footer-section">
+      <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4">
+             <div class="footer-item">
+                <i class="bi bi-cup-hot-fill"></i>
+                <h3>150</h3>
+                <p>Dishes Menu</p>
+            </div>
+          </div>
+     
+          <div class="col-md-4">
+            <div class="footer-item">
+              <i class="bi bi-emoji-smile-fill"></i>
+              <h3>2000</h3>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="footer-item">
+              <i class="bi bi-stars"></i>
+              <h3>450</h3>
+              <p>Featured Events</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container11">
+    <section class="bg">
+      <div class="play-button">
+      </div>
+    </section>
+    </div> 
+     
+
+    <div class="container12">
+      <h2>OUR SPECIALITIES</h2>
+      <h1>Praesent Condimentum Rutrum Nibh..</h1>
+      <div class="img-grid">
+       <img src="../img/blog/blogimg1.png" alt="">
+       <img src="../img/blog/blogimg7.png" alt="">
+       <img src="../img/sp3.png" alt="">
+      </div>
+    </div>
+
+    <div class="quote-grid">
+          <div class="q-card">
+            <h4>Fine Dining</h4>
+            <p>Alias suscipit iure voluptas ea et et voluptatibus. Animi assumenda libero. At natus id. Perferendis sunt  </p>
+          </div>
+          <div class="q-card">
+            <h4>Spicy Cocktails</h4>
+            <p>Quibusdam quas quae animi tempore est. Ipsum alias beatae enim tempore occaecati alias aut id. Quisquam </p>
+          </div>
+       
+          <div class="q-card">
+            <h4>Best Veggie</h4>
+            <p>Ut laudantium consectetur. Veritatis rerum reprehenderit qui occaecati quis autem. Animi aut incidunt perferendis </p>
+          </div>
+        </div>
+        
+    </div>
+   <div class="bg2">
+       <div class="container13">
+        <h2>OUR STANDARDS</h2>
+        <h1>There Are Many Variations Of Passages</h1>
+
+       </div>
+            <section class="footer-section1">
+              <div class="container text-center">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="footer-item">
+              
+                          <h3 style="text-align: center;
+                          font: normal normal normal 70px/43px Bellefair;
+                          letter-spacing: 2.46px;
+                          color: #FFFFFF;
+                          opacity: 1;">01</h3>
+                      </div>
+                    </div>
+              
+                    <div class="col-md-4">
+                      <div class="footer-item">
+                  
+                        <h3 style="text-align: center;
+                        font: normal normal normal 70px/43px Bellefair;
+                        letter-spacing: 2.46px;
+                        color: #FFFFFF;
+                        opacity: 1;">02</h3>
+                      </div>
+                    </div>
+                  
+                    <div class="col-md-4">
+                      <div class="footer-item">
+            
+                        <h3 style="text-align: center;
+                        font: normal normal normal 70px/43px Bellefair;
+                        letter-spacing: 2.46px;
+                        color: #FFFFFF;
+                        opacity: 1;">03</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+                  <div class="quote-grid2">
+                    <div class="q-card1">
+                      <h4>Choose Music Carefully Sapiente.</h4>
+                      <p>Sed ipsa et id ea saepe sint. Eligendi aut ea ea. Quos cupiditatei est est doloremque quasi velit </p>
+                    </div>
+                    <div class="q-card1">
+                      <h4>Never Serve Food That Has Expired.</h4>
+                      <p>Perferendis hic illum placeat. Enim sint rerum vitae rerum et voluptas dolorem et nemo.Culpa maiores </p>
+                    </div>
+                
+                    <div class="q-card1">
+                      <h4>Keep The Restaurant Spotless.</h4>
+                      <p>Perferendis hic illum placeat. Enim sint rerum vitae rerum et voluptas dolorem et nemo.Culpa maiores</p>
+                    </div>
+                  </div>
+                </div>
+
+          <div class="container14">
+            <div class="text-content">
+              <h2 >Team Member</h2>
+              <h1 >Meet Our Team</h1>
+          </div>
+             <div class="text-content" >
+                 <p >Omnis fuga velit temporibus ut unde quas occaecati. Quia dolorem vel similique. Temporibus et tempore. A et eos ducimus recusandae ut.Sunt blanditiis assumenda suscipit.</p>
+            </div>
+  
+          <div class="team-grid">
+              <img src="../img/team1.png" alt="Team Member 1" style="opacity: 0.5;">
+              <img src="../img/blog/blogimg4.png" alt="Team Member 2">
+              <img src="../img/blog/blogimg6.png" alt="Team Member 3">
+          </div>
+          </div>
+                    
+
+          <div class="container15">
+
+              <h2 style="font: normal normal normal 22px/27px Montserrat;
+              letter-spacing: 0.18px;
+              color: #C5A572; margin-bottom: 10px;">TAKE A TOUR</h2>
+              <h1 style="text-align: center;
+              font: normal normal normal 45px/60px Bellefair;
+              letter-spacing: 0px;
+              color: #121D27;
+              text-transform: capitalize;
+              opacity: 1;">Our Restaurant Gallery</h1>
+              <div class="img-grid2">
+                  <img src="../img/gallery/g10.png" alt="" style="height: 220px;">
+                  <img src="../img/G3.png" alt="" style="height: 220px;">
+                  <img src="../img/gallery/g6.png" alt="" style="height: 220px;">
+                  <img src="../img/G2.png" alt="" style="height: 220px;">
+              </div>
+          </div>
+          
+          <!-- footer -->
+          <div class="footer-container1">
+            <div class="main">
+            <div class="logo">
+                <img src="../img/cafelogo.svg" alt="Logo" style="height: auto; width: 200px;">
+                <div class="social-icons2">
+                  <a href="#" target="_blank" style="color: white;">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" style="color: white;">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" style="color: white;">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" target="_blank" style="color: white;">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              </div>
+             </div></div>
+       
+       <div class="middle-bar"></div>
+       
+       <div class="container ">
+           
+             <div class="row text-center">
+                 <div class="col-md-3 footer-column">
+                     <h5>Contact Us</h5>
+                     <p>2839 Old Dear Lane<br>New York, NY 10013<br>United States</p>
+                     <p>+ (0712) 819-79-555<br>info@havnor.com</p>
+                 </div>
+     
+                 <div class="col-md-3 footer-column">
+                     <h5>Services</h5>
+                     <p style="margin-top: 45px; margin-bottom: 1px;">Fine Dining & Concierge</p>
+                     <p style="margin-top: 0px;margin-bottom: 1PX;"> Quick Counter Service</p>
+                     <p style="margin-top: 0px;margin-bottom: 1PX;">Banquet Table Service</p>
+                     <p style="margin-top: 0px;margin-bottom: 1PX;">Fine Dining & Concierge</p>
+                     <p style="margin-top: 0px;margin-bottom: 1PX;">Fine Dining & Concierge</p>
+                     <p style="margin-top: 0px;margin-bottom: 1px;">Fine Dining & Concierge</p>
+                     <p style="margin-top: 0px;margin-bottom: 1px;">Fine Dining & Concierge</p>
+                 </div>
+     
+                 <div class="col-md-3 footer-column">
+                     <h5>Opening Hours</h5>
+                     <p>Mon - Fri: 09:00 AM - 08:00 PM<br>Sat - Sun: 09:00 AM - 05:00 PM</p>
+                     <h5>Coffee Bar Opening</h5>
+                     <p>Mon - Fri: 09:00 AM - 08:00 PM<br>Sat - Sun: 09:00 AM - 05:00 PM</p>
+                 </div>
+     
+                 <div class="col-md-3 footer-column">
+                     <h5>Newsletter</h5>
+                     <p>  Stay always in touch! Subscribe to our newsletter.</p>
+                     <div class="newsletter">
+                         <input type="email" placeholder="Enter Your Email">
+                         <button>Subscribe Now</button>
+                     </div>
+                 </div>
+             </div>
+     
+             <div class="row mt-4 text-center">
+                 <div class="col-md-12">
+                     
+                     <p style="font: normal normal normal 13px/40px Montserrat;
+                     letter-spacing: 0.6px;
+                     color: #949494;
+                     opacity: 1;">COPYRIGHT &copy; All rights reserved by Oneline Cafe</p>
+                 </div>
+             </div>
+         </div>
+         </div>
+  </body>
+</html>
+
+

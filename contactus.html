@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .box{
+            width: auto;
+            height:750px;
+            padding: 0px;
+            margin:10px auto;
+            background-image: url(../img/bgcafe.png);
+            text-align: center;
+            background-size: cover;
+            object-fit: contain;
+            opacity:1;
+            margin-bottom: 100px;
+         }
+         .top-bar {
+            background-color: black;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .top-bar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar ul li {
+            margin-left: 20px;
+        }
+        .top-bar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .top-bar .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        header {
+            background-color: #16222A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        header .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            
+        }
+        .h{
+            margin: 200px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .h h1 {
+            margin: 0 auto;
+            font: normal normal normal 60px/69px Bellefair;
+            letter-spacing: 1.2px;
+            color: #C5A572;
+            opacity: 1;
+        }
+        .h p {
+            text-align: left;
+            font: normal normal medium 20px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 0.76;
+        } 
+       
+        .CONTACT h6 {
+            color: #c5a572;
+        }
+        .CONTACT_TUCH {
+            border-bottom: 1px solid #c5a572;
+        }
+        .box2{
+            font-family: 'Montserrat', sans-serif;
+            background: #F4EEE4;
+            color: #121D27;
+            width:1200px;
+            height: auto    ;
+            margin-bottom: 50px;
+            margin: 0 auto;
+        }
+        .reservation-section {
+            text-align: center;
+    margin-top: 60px;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+        .reservation-section h2 {
+            text-align: center;
+font: normal normal normal 32px/37px Bellefair;
+letter-spacing: 0.26px;
+color: #C5A572;
+text-transform: uppercase;
+opacity: 1;
+        }
+
+        .reservation-section h1 {
+            text-align: center;
+font: normal normal normal 20px/34px Montserrat;
+letter-spacing: 0px;
+color: #000000;
+text-transform: lowercase;
+opacity: 0.79;
+width: 550px;
+margin-left: 120px;
+        }
+
+        .form-container {
+            max-height: 1200px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #F4EEE4;
+            padding: 30px;
+            
+            
+        }
+
+        .form-container .form-control {
+            border: none;
+            border-bottom: 1px solid black;
+            opacity: 0.5;
+            margin-bottom: 20px;
+            background: transparent;
+            font-size: 16px;
+        }
+
+        .form-container .form-control:focus {
+            box-shadow: none;
+            border-color: #121D27;
+        }
+
+        .form-container button {
+            background-color: #121D27;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0;
+            font-size: 16px;
+          
+        }
+        .footer-container1 {
+            background-image: url(../img/bgcafe.png) ;
+            background-size: cover;
+           
+            background-position: center;
+            padding: 40px;
+            margin-top: 0px;
+        }
+        .footer-logo{
+          font-size: 24px;
+          font-weight: bold;
+        }.footer-logo i {
+            font-size: 30px;
+            color: #e3c88d;
+        }
+
+        .footer-column h5 {
+          text-align: left;
+          font: normal normal medium 25px/40px Montserrat;
+          letter-spacing: 0.63px;
+          color: #C5A572;
+          opacity: 1;
+        }
+        .footer-column p{
+          margin-top: 45px;
+          margin-bottom: 4rem;
+          text-align: left;
+          font: normal normal normal 15px/40px Montserrat;
+          letter-spacing: 0.69px;
+          color: #DADADA;
+          opacity: 0.79;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 45px;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0;
+        }
+        .footer-column ul li p{
+          text-align: left;
+          font: normal normal normal 15px/40px Montserrat;
+          letter-spacing: 0.69px;
+          color: #DADADA;
+          opacity: 0.79;
+          margin-bottom: 0rem;
+        }
+        .newsletter input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f1b24a;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .middle-bar {
+           
+            padding: 15px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+        .middle-bar .social-icons2{
+            display: flex;
+            justify-content: space-between;        }
+            .main {
+          background: none;
+            display: flex
+        ;
+            justify-content: center;
+            padding: 70px 63px;
+
+        }
+</style>
+</head>
+<body>
+    <!-- header -->
+    <div class="box">
+
+        <div class="top-bar">
+            <div class="social-icons">
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+            <ul>
+                <a href="#" target="_blank" style=" color: white;
+                text-decoration: none;
+                font-size: 14px;">
+                    <i class="fab fa-envelope-square" ></i>
+                </a>
+                <li><a href="#">Mail us: info@havnor.com</a></li>
+              <li>  <a href="#" target="_blank" style=" color: white;
+                text-decoration: none;
+                font-size: 14px;">
+                    <i class="fa fa-phone"></i>
+                </a></li>
+                <li><a href="#">Call us: (+1) 123 456 7890</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="logo">
+                <img src="../img/cafelogo.svg" alt="Logo" style="height: auto; width: 200px;">
+              
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../proj 1/1one.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="h" >
+            <h1>Contact Us</h1>
+            <p>Home / Contact Us</p>
+        </div>
+    </div>
+    <!-- cont -->
+    <section class="container-fluid  ">
+        <div class="container py-5 ">
+            <div class="row justify-content-center align-items-center ">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="m-2">
+                        <h6 style="text-align: left;
+                        font: normal normal normal 22px/27px Montserrat;
+                        letter-spacing: 0.18px;
+                        color: #C5A572;
+                        text-transform: uppercase;
+                        opacity: 1;">CONTACT US</h6>
+                        <h2 style="text-align: left;
+                        font: normal normal normal 45px/50px Bellefair;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        text-transform: capitalize;
+                        opacity: 1;">Get In Touch</h2>
+                        <div class="CONTACT_TUCH">
+                            <div class="d-flex  align-items-center">
+                                <div class="m-1 p-2"><i class="fa fa-map-marker"></i></div>
+                                <div style="text-align: left;
+                                font: normal normal medium 24px/34px Montserrat;
+                                letter-spacing: 0.6px;
+                                color: #121D27;
+                                opacity: 0.65;">2839 Old Dear Lane New York, NY 10013 United States</div>
+                            </div>
+
+                            <div class="d-flex  align-items-center">
+                                <div class="m-1 p-2"><i class="fa fa-phone"></i></div>
+                                <div style="text-align: left;
+                                font: normal normal medium 24px/34px Montserrat;
+                                letter-spacing: 0.6px;
+                                color: #121D27;
+                                opacity: 0.65;">+ (0712) 819 79 555</div>
+                            </div>
+
+                            <div class="d-flex  align-items-center">
+                                <div class="m-1 p-2"><i class="fa fa-envelope"></i></div>
+                                <div style="text-align: left;
+                                font: normal normal medium 24px/34px Montserrat;
+                                letter-spacing: 0.6px;
+                                color: #121D27;
+                                opacity: 0.65;">info@havnor.com</div>
+                            </div>
+                        </div>
+
+                        <div class="m-2">
+                            <h4 class="py-2" style="text-align: left;
+                            font: normal normal medium 25px/40px Montserrat;
+                            letter-spacing: 0.63px;
+                            color: #121D27;
+                            opacity: 1;">Opening Hours</h4>
+                            <p style="text-align: left;
+                            font: normal normal normal 22px/40px Montserrat;
+                            letter-spacing: 0.55px;
+                            color: #121D27;
+                            opacity: 0.79;">Mon - Fri   09:00 AM - 08:00 PM</p>
+                            <p style="text-align: left;
+                            font: normal normal normal 22px/40px Montserrat;
+                            letter-spacing: 0.55px;
+                            color: #121D27;
+                            opacity: 0.79;">Sat - Sun   09:00 AM - 05:00 PM</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-6 justify-content-center align-items-center">
+                    <div class="m-2">
+                        <iframe style=" background-color:#121d2777; width: 700px; height: 500px; margin-left: 150px;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.4078667405274!2d72.50516137417912!3d23.045503879157657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84ac539ac151%3A0x6acae7cc1aec8366!2sExcelsior%20Technologies%C2%AE!5e0!3m2!1sen!2sin!4v1737966471229!5m2!1sen!2sin"
+                            width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- message -->
+   <div class="box2">
+    <section class="reservation-section">
+        <h2>SEND A MESSAGE</h2>
+        <h1>Do you have anything in your mind to tell us? please don't hesitate to get in touch to us via our contact form.</h1>
+        <div class="form-container">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Name *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="E-mail *" required>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="phone" class="form-control" placeholder="Phone *" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="subject *" required>
+                    </div>
+                </div>
+                
+                <textarea class="form-control" rows="2" placeholder="Notes"></textarea>
+                <div class="text-center ">
+                    <button type="submit">Book A Table</button>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+   <!-- footer -->
+   <div class="footer-container1">
+    <div class="main">
+        <div class="logo">
+            <img src="../img/cafelogo.svg" alt="Logo" style="height: auto; width: 200px;">
+            
+         </div></div>
+  <div class="middle-bar"></div>
+  <div class="social-icons2">
+    <a href="#" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="#" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+<a href="#" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+</div>
+  <div class="container ">
+      
+        <div class="row text-center">
+            <div class="col-md-3 footer-column">
+                <h5>Contact Us</h5>
+                <p>2839 Old Dear Lane<br>New York, NY 10013<br>United States</p>
+                <p>+ (0712) 819-79-555<br>info@havnor.com</p>
+            </div>
+
+            <div class="col-md-3 footer-column">
+                <h5>Services</h5>
+                <p style="margin-top: 45px; margin-bottom: 1px;">Fine Dining & Concierge</p>
+                <p style="margin-top: 0px;margin-bottom: 1PX;"> Quick Counter Service</p>
+                <p style="margin-top: 0px;margin-bottom: 1PX;">Banquet Table Service</p>
+                <p style="margin-top: 0px;margin-bottom: 1PX;">Fine Dining & Concierge</p>
+                <p style="margin-top: 0px;margin-bottom: 1PX;">Fine Dining & Concierge</p>
+                <p style="margin-top: 0px;margin-bottom: 1px;">Fine Dining & Concierge</p>
+                <p style="margin-top: 0px;margin-bottom: 1px;">Fine Dining & Concierge</p>
+            </div>
+
+            <div class="col-md-3 footer-column">
+                <h5>Opening Hours</h5>
+                <p>Mon - Fri: 09:00 AM - 08:00 PM<br>Sat - Sun: 09:00 AM - 05:00 PM</p>
+                <h5>Coffee Bar Opening</h5>
+                <p>Mon - Fri: 09:00 AM - 08:00 PM<br>Sat - Sun: 09:00 AM - 05:00 PM</p>
+            </div>
+
+            <div class="col-md-3 footer-column">
+                <h5>Newsletter</h5>
+                <p>  Stay always in touch! Subscribe to our newsletter.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button>Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 text-center">
+            <div class="col-md-12">
+                
+                <p style="font: normal normal normal 13px/40px Montserrat;
+                letter-spacing: 0.6px;
+                color: #949494;
+                opacity: 1;">COPYRIGHT &copy; All rights reserved by Oneline Cafe</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
